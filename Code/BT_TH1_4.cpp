@@ -3,6 +3,7 @@
 using namespace std;
 
 const double limit = 0.00001;
+const double TWO_PI = 2 * 3.14159265358979323846;
 
 /**
  * Hàm tính giá trị sin(x) sử dụng chuỗi Taylor.
@@ -29,8 +30,9 @@ double tinhSin(double x) {
 }
 
 int main() {
-    cout << "X = ";
+    cout << "X (radian) = ";
     double x;   cin >> x;
+    x = fmod(x, TWO_PI);
 
     double result = tinhSin(x);
 
