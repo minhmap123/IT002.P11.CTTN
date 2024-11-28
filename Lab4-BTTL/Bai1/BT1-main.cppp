@@ -1,0 +1,20 @@
+#include "QuanLyNhanVien.cpp"
+
+int main() {
+    cout << "Nhap thong tin cua Quan Ly: " << endl;
+    QuanLy ql;  ql.Nhap();
+
+    cout << '\n';
+    
+    cout << "Nhap thong tin cua Ky Su: " << endl;
+    KySu ks;    ks.Nhap();
+
+    cout << "\n----------------------------------------------\n";
+    cout << "Hien thi thong tin: \n\n";
+    cout << "Thong tin cua Quan ly: \n";
+    ql.Xuat();
+    cout << "Thong tin cua Ky su: \n";
+    ks.Xuat();
+
+    return 0;
+}
